@@ -1,0 +1,107 @@
+/* ==== GLOBAL STYLING ==== */
+body {
+    background-color: #f8f9fa;
+    font-family: "Arial", sans-serif;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    padding: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ==== CARD STYLING ==== */
+.card {
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Tabel Hover */
+.table-hover tbody tr:hover {
+    background-color: #e9ecef;
+    transition: background 0.2s ease-in-out;
+}
+
+/* ==== THUMBNAIL IMAGE ==== */
+.img-thumbnail {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+}
+
+.img-thumbnail:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* ==== OVERLAY IMAGE ==== */
+.image-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1050;
+    display: none;
+}
+
+/* Gaya gambar yang diperbesar */
+.image-overlay img {
+    max-width: 85%;
+    max-height: 85%;
+    border: 6px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.35);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Tombol Tutup Overlay */
+.image-overlay .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 35px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.image-overlay .close-btn:hover {
+    color: #ff4c4c;
+}
+
+/* ==== BUTTON STYLING ==== */
+.btn {
+    margin-right: 6px;
+    border-radius: 6px;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 15px;
+    }
+    
+    .image-overlay img {
+        max-width: 95%;
+        max-height: 80%;
+    }
+}

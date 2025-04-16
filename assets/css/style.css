@@ -1,0 +1,122 @@
+html, body{
+  height: 100%;
+}
+
+body {
+  font-family: Raleway, sans-serif;
+  background-image: url('/assets/img/whitebg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.admin-btn {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: rgb(0, 61, 158);
+  color: #FFFFFF;
+  border: 2px solid white;
+  text-align: center;
+  font-size: 18px;
+  padding: 8px 20px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.15), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.admin-btn:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid white;
+}
+
+.cust-nav{
+  color: #fff;
+  background-color: rgb(0, 61, 158);
+}
+
+.text-title{
+  color: rgb(0, 61, 158);
+  font-size: 40px;
+}
+
+.btn-emoji {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  height: auto;
+  width: auto;
+  transition: transform 0.2s, background 0.3s ease-in-out, border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.btn-emoji img{
+  margin-top: 5vh;
+  height: 80%;
+  width: 80%;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.btn-emoji p {
+  font-size: 2rem;
+  margin-top: 5px;
+}
+
+.btn-emoji:hover img p {
+  transform: scale(1.1);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-emoji:active img p {
+  transform: scale(0.9);
+}
+
+.large-popup{
+  max-width: 800px !important;
+  width: 90% !important;
+}
+
+.large-textarea{
+  height: 220px !important;
+  width: 90% !important;
+  font-size: 18px;
+  padding: 10px;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  background-color: rgb(0, 61, 158);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  text-align: center;
+  padding: 15px;
+}
+
+.ulasan-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.ulasan-btn {
+  background: white;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.ulasan-btn:hover {
+  background: #f0f0f0;
+  border-color: #999;
+}
